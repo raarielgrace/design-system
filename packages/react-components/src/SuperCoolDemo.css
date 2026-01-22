@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  /* The body has a 8px margin. Can't find what's applying it, but I'm taking it into account for the div size */
+  height: calc(100vh - 16px);
+  width: calc(100vw - 16px);
+}
+
+.panel {
+  width: "100%";
+  flex-grow: 1;
+  display: flex;
+}
+
+.panel.light {
+  background-color:aliceblue;
+}
+
+.panel.dark {
+  background-color: navy;
+}
+
+#theme-switch {
+  margin: 4px;
+  > button {
+    border: none;
+    background: none;
+  }
+}
+
+#theme-switch.light svg {
+  fill: var(--surface-color-primary-button-default);
+}
+
+#theme-switch.dark svg {
+  fill: var(--surface-color-secondary-button-default);
+}
+
+#start-button {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#cake {
+  display: block;
+  pre {
+    white-space: pre-wrap;
+  }
+}

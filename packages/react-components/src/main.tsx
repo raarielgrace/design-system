@@ -1,9 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+// import App from "./App.tsx";
+import SuperCoolDemo from "./SuperCoolDemo.tsx";
+import { ToasterProvider } from "./components/Toast/Toaster.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <ToasterProvider>
+      <SuperCoolDemo />
+    </ToasterProvider>
   </React.StrictMode>
 );
