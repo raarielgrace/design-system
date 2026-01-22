@@ -13,6 +13,7 @@ import {
   CalloutPage,
   CheckboxGroupPage,
   InlineAlertPage,
+  LoaderPage,
   ModalDialogPage,
   NumberFieldPage,
   RadioGroupPage,
@@ -115,6 +116,7 @@ function App() {
         <CheckboxGroupPage />
         <SwitchPage />
         <InlineAlertPage />
+        <LoaderPage />
         <ModalDialogPage />
         <RadioGroupPage />
         <SelectPage />
