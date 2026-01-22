@@ -53,6 +53,10 @@ export default function SuperCoolDemo() {
     setThirdLoad(true);
     await determinateLoad();
     setThirdLoad(false);
+    queue.add({
+      message: "Load successful!",
+      variant: "success",
+    });
     setLoaded(true);
   };
 
