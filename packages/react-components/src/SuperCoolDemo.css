@@ -13,15 +13,18 @@
 }
 
 .panel.light {
-  background-color:aliceblue;
+  background-color: var(--surface-color-background-light-blue);
 }
 
 .panel.dark {
-  background-color: navy;
+  background-color: var(--surface-color-background-dark-blue);
 }
 
 #theme-switch {
   margin: 4px;
+  > * {
+    margin: 0px 4px;
+  }
   > button {
     border: none;
     background: none;
